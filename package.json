@@ -1,0 +1,23 @@
+{
+  "name": "fahrenheit-to-celsius-app",
+  "version": "1.0.0",
+  "description": "sample app to demonstrate A08 security case: software and data integrity failures",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.laputa.veracode.io/security-labs-apps/app-software-and-data-integrity-failures-node.git"
+  },
+  "author": "Tommy Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "billy-tools": "^1.1.1",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "validator": "^13.7.0"
+  }
+}

@@ -1,0 +1,31 @@
+html
+  head
+    script(src='https://hunter2labs.s3.amazonaws.com/common.js')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    .text-center
+      h1.display-4 Welcome to Convert App
+      br
+      br
+      form(action="." method="POST")
+        .row.justify-content-center
+          .col-auto
+            input(
+              type="text"
+              id="fahrenheit"
+              name="fahrenheit"
+              class="form-control"
+              value=model.fahrenheit
+            )
+            span.text-danger=model.error
+          .col-auto
+            input(type="submit" value="Convert to Celsius" class="btn btn-primary")
+        .row.justify-content-center(style='margin-top: 20px')
+          .col-auto
+            h3
+              span=model.fahrenheit
+              |  ÃÂ°Fahrenheit is 
+              span=model.celsius
+              |  ÃÂ°Celsius
+          .col-auto
